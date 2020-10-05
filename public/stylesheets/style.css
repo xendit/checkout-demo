@@ -1,0 +1,239 @@
+/**
+ * style.css
+ * Xendit Checkout Demo
+ * This file contains the general styling
+ */
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4em;
+    font-size: 15px;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.button {
+    padding: 10px;
+    min-width: 180px;
+    background-color: #4573ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+
+.button--outline {
+    background-color: #ffffff;
+    color: #4573ff;
+    border: 1px solid #4573ff;
+}
+
+/* Header */
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__wrapper {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__site,
+.header__navigation {
+    margin: 30px;
+}
+
+.header__links {
+    list-style: none;
+}
+
+.header__links li {
+    display: inline-block;
+}
+
+.header__checkbox,
+.header__button-menu {
+    display: none;
+}
+
+.header__link-site,
+.header__link-github,
+.header__link-docs {
+    padding: 10px 0;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.header__link-site {
+    padding-left: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    background: url(/images/store/logo-xendit.svg) left center no-repeat;
+}
+
+.header__link-site:hover {
+    text-decoration: none;
+}
+
+.header__link-github,
+.header__link-docs {
+    margin-left: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4573ff;
+}
+
+.header__link-github {
+    padding-left: 32px;
+    background: url(/images/store/github.svg) left center no-repeat;
+}
+
+.header__link-github:hover,
+.header__link-docs:hover {
+    text-decoration: underline;
+}
+
+/* Responsive View */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .header__wrapper {
+        height: 50px;
+    }
+
+    .header__site {
+        margin: 12px 20px;
+    }
+
+    .header__button-menu {
+        padding: 24px 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .header__navigation {
+        margin: 0;
+    }
+
+    .header__links {
+        margin-top: 50px;
+        width: 100%;
+        max-height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        background-color: #ffffff;
+        overflow: hidden;
+        box-shadow: 1px 1px 4px -2px rgba(0, 0, 0, 0.1);
+        transition: max-height 0.2s ease-in-out;
+    }
+
+    .header__links li {
+        display: block;
+    }
+
+    .header__link-github,
+    .header__link-docs {
+        padding: 15px 20px;
+        margin-left: 0;
+        display: block;
+        text-align: left;
+        color: #4573ff !important;
+    }
+
+    .header__link-github {
+        margin-top: 10px;
+        background: none !important;
+    }
+
+    .header__link-docs {
+        margin-bottom: 10px;
+    }
+
+    .header__link-github:hover,
+    .header__link-docs:hover {
+        text-decoration: none;
+    }
+
+    .header__checkbox:checked ~ .header__links {
+        max-height: 240px;
+    }
+
+    /* Mobile Nav Icon */
+    .header__button-menu .nav-icon {
+        width: 18px;
+        height: 2px;
+        position: relative;
+        background: #3d3d3d;
+        display: block;
+        transition: all 0.2s ease-out;
+    }
+
+    .header__button-menu .nav-icon:before,
+    .header__button-menu .nav-icon:after {
+        height: 100%;
+        width: 100%;
+        content: '';
+        position: absolute;
+        display: block;
+        background: #3d3d3d;
+        transition: all 0.2s ease-out;
+    }
+
+    .header__button-menu .nav-icon:before {
+        top: 5px;
+    }
+
+    .header__button-menu .nav-icon:after {
+        top: -5px;
+    }
+
+    .header__checkbox:checked ~ .header__button-menu .nav-icon {
+        background: transparent;
+    }
+
+    .header__checkbox:checked ~ .header__button-menu .nav-icon:before {
+        transform: rotate(-45deg);
+    }
+
+    .header__checkbox:checked ~ .header__button-menu .nav-icon:after {
+        transform: rotate(45deg);
+    }
+
+    .header__checkbox:checked
+        ~ .header__button-menu:not(.steps)
+        .nav-icon:before,
+    .header__checkbox:checked
+        ~ .header__button-menu:not(.steps)
+        .nav-icon:after {
+        top: 0;
+    }
+}
