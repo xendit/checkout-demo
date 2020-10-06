@@ -1,1 +1,1 @@
-# checkout-demo
+# Xendit Checkout Demo
