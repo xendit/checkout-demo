@@ -4,7 +4,8 @@
   "description": "Xendit Checkout Demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js",
+    "prettier": "pretty-quick --staged"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/xendit/checkout-demo/issues"
   },
-  "homepage": "https://github.com/xendit/checkout-demo#readme"
+  "homepage": "https://github.com/xendit/checkout-demo#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "axios": "0.20.0",
+    "body-parser": "1.17.0",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "prettier": "2.1.2",
+    "pretty-quick": "^3.0.2"
+  }
 }
