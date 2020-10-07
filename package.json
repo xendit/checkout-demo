@@ -4,7 +4,8 @@
     "description": "Xendit Checkout Demo",
     "main": "index.js",
     "scripts": {
-        "start": "node server/index.js"
+        "start": "node server/index.js",
+        "prettier": "prettier -w ."
     },
     "repository": {
         "type": "git",
