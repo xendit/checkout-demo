@@ -29,13 +29,11 @@ router.get('/api/healthcheck/readiness', (req, res) => {
 });
 
 router.post('/api/invoice', async (req, res) => {
-    // generate random external_id
-    const now = new Date();
-
     try {
+        // you can change the config with your business details
         const data = {
             ...config.invoiceData,
-            external_id: `checkout-demo-${now.getTime()}`,
+            external_id: `checkout-demo-${+new Date()}`,
             currency: req.body.currency,
             amount: req.body.amount,
             failure_redirect_url: req.body.redirect_url,
