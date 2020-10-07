@@ -4,17 +4,17 @@
  * This file defines all the endpoints for this demo (on the api/backend side).
  */
 
-"use strict";
+'use strict';
 
-const express = require("express");
+const express = require('express');
 const router = express.Router();
 
 // load the controller
-const InvoiceController = require("./controller");
+const InvoiceController = require('./controller');
 const invoiceController = new InvoiceController();
 
 // load the configuration file
-const config = require("./config");
+const config = require('./config');
 
 /**
  * Xendit integration to create invoice
@@ -22,25 +22,19 @@ const config = require("./config");
  * 2. POST /api/invoice to create invoice (proxy from this backend to Xendit API Gateway)
  */
 
-router.get("/api/healthcheck/readiness", (req, res) => {
-  res.json({
-    status: "ok",
-  });
+router.get('/api/healthcheck/readiness', (req, res) => {
+    res.json({
+        status: 'ok'
+    });
 });
 
-router.post("/api/invoice", async (req, res) => {
-  try {
-    const data = {
-      ...config.invoiceData,
-      currency: req.body.currency,
-      amount: req.body.amount,
-    };
-
-    const invoice = await invoiceController.create(data);
-    return res.status(200).send(invoice.data);
-  } catch (e) {
-    return res.status(e.response.status).send(e.response.data);
-  }
+router.post('/api/invoice', async (req, res) => {
+    try {
+        const invoice = await invoiceController.create(req.body);
+        return res.status(200).send(invoice.data);
+    } catch (e) {
+        return res.status(e.response.status).send(e.response.data);
+    }
 });
 
 module.exports = router;
