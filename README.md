@@ -43,7 +43,7 @@ In your Xendit Dashboard, you can [enable the payment methods](https://dashboard
 
 ### Running the Node Server
 
-You need to specify your environment variables as stated in [`.env.example`](.env.example) to your needs. In this case, you need to set these values: 
+You need to modify your environment variables as stated in [`.env.example`](.env.example) to your needs. In this case, you need to set these values: 
 
 - `process.env.PORT`
 - `process.env.API_GATEWAY_URL`
@@ -59,7 +59,7 @@ After installation is done, start the local server:
 
     npm run start
 
-If everything went well, you should see the following message log in your terminal:
+If everything went well, you should see the following message in your terminal:
 
     server is listening on port: <port>
 
