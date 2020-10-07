@@ -1,12 +1,12 @@
 # Xendit Checkout Demo
 
-This demo provides a simple e-commerce store that utilizes a pure JavaScript & HTML for frontend and a simple [ExpressJS](https://expressjs.com/) server for the backend to proxy the request from client-side to the [Xendit API Gateway](https://developers.xendit.co) to illustrate how to order with multiple choice payment as well as the integration and redirection. 
+This demo provides a simple e-commerce store that utilizes a pure JavaScript & HTML for frontend and a simple [ExpressJS](https://expressjs.com/) server for the backend to proxy the request from client-side to the [Xendit API Gateway](https://developers.xendit.co/api-reference/#invoices) to illustrate how to create order with multiple choice of payments as well as the integration and redirection. 
 
 **You can see this demo app running in test mode on [demo.xendit.co](https://demo.xendit.co).**
 
 ## Overview
 
-<img src="public/images/screenshots/demo-desktop.png" alt="Demo on Google Chrome" width="610"><img src="public/images/screenshots/demo-iphone.png" alt="Demo on Safari iPhone X" width="272">
+<img src="public/images/screenshots/demo-desktop.png" alt="Demo on Google Chrome" width="610"><img src="public/images/screenshots/demo-mobile.png" alt="Demo on Safari iPhone X" width="272">
 
 This demo provides an all-in-one example for integrating with Xendit Checkout on the web:
 
@@ -35,8 +35,8 @@ There is also one file called [`server/config.js`](server/config.js) that store 
 
 You’ll need the following:
 
-- [Node.js](http://nodejs.org) >=12.0.0
-- Modern browser that supports ES6.
+- [Node.js](https://nodejs.org) >=10.0.0
+- [NPM](https://npmjs.org) >=6.0.0
 - Xendit account to accept payments ([sign up](https://dashboard.xendit.co/register/1) for free). After registering, please [generate](https://dashboard.xendit.co/settings/developers#api-keys) secret key with **MONEY-IN WRITE** permission in order to perform request for creating invoice. 
 
 In your Xendit Dashboard, you can [enable the payment methods](https://dashboard.xendit.co/invoices) you’d like to test by clicking on Customize button.
