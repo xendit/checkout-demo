@@ -1,0 +1,173 @@
+/**
+ * try-checkout.css
+ * Xendit Checkout Demo
+ * This file contains the styling for try checkout page
+ */
+
+/* Overall Container */
+.site {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Header */
+.header--blue {
+    background-color: #4573ff;
+    border-bottom: none;
+}
+
+.header--blue .header__button-menu .nav-icon,
+.header--blue .header__button-menu .nav-icon:before,
+.header--blue .header__button-menu .nav-icon:after {
+    background: #ffffff;
+}
+
+.header--blue .header__link-site,
+.header--blue .header__link-github,
+.header--blue .header__link-docs {
+    color: #ffffff;
+}
+
+.header--blue .header__link-site {
+    padding-left: 40px;
+    background: url(/images/try-checkout/logo-xendit.svg) left center no-repeat;
+}
+
+.header--blue .header__link-github {
+    background: url(/images/try-checkout/github.svg) left center no-repeat;
+}
+
+/* Body */
+.body__icon-demo {
+    margin: 70px auto 20px auto;
+    width: 200px;
+    height: 160px;
+    background: url(/images/try-checkout/logo-demo.svg) center no-repeat;
+}
+
+.body__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3d3d3d;
+}
+
+.body__message {
+    padding-top: 10px;
+    font-size: 18px;
+    color: #233659;
+}
+
+.body__links {
+    margin: 40px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.body__button {
+    margin: 0 5px;
+}
+
+/* Panel */
+.panel {
+    padding: 30px 50px;
+    margin-bottom: 30px;
+    display: inline-block;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+.panel__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #233659;
+}
+
+.panel__description {
+    padding: 5px 0 20px 0;
+    font-size: 16px;
+    color: #233659;
+}
+
+.panel__link {
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4573ff;
+    text-decoration: none;
+    background: url(/images/try-checkout/icon-return.svg) left center no-repeat;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 20px 0;
+}
+
+.footer__logo-xendit {
+    margin: 0 auto;
+    height: 35px;
+    width: 125px;
+    background: url(/images/try-checkout/logo-powered-xendit.svg) center
+        no-repeat;
+}
+
+/* Responsive View */
+@media screen and (max-width: 768px) {
+    .header--blue .header__link-site {
+        padding-left: 30px;
+        background-size: 15%;
+    }
+
+    /* Body */
+    .body__icon-demo {
+        margin-top: 30px;
+        width: 150px;
+        height: 120px;
+        background-size: contain;
+    }
+
+    .body__title {
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+    .body__message {
+        padding: 10px 20px 0 20px;
+        font-size: 14px;
+    }
+
+    .body__message br {
+        display: none;
+    }
+
+    .body__links {
+        margin: 20px 0;
+        flex-direction: column;
+    }
+
+    .body__button {
+        margin: 0 20px 10px 20px;
+    }
+
+    .body__button:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Panel */
+    .panel {
+        margin: 0 20px;
+    }
+
+    .panel__title {
+        font-size: 16px;
+    }
+
+    .panel__description,
+    .panel__link {
+        font-size: 14px;
+    }
+}
