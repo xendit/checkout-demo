@@ -46,6 +46,7 @@
     const setupIntegration = () => {
         integration =
             selectIntegration.options[selectIntegration.selectedIndex].value;
+        invoiceUrl = null;
     };
 
     // handles cart details changes based on country selection
@@ -142,6 +143,11 @@
                 amount,
                 redirect_url: `${window.location.origin}/try-checkout`
             };
+
+            // redirection is not needed for dialog pop-up integration
+            if (invoiceUrl === 'Dialog Pop-up') {
+                delete invoiceData.redirect_url;
+            }
 
             // create an invoice for store checkout
             try {
