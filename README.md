@@ -1,6 +1,6 @@
 # Xendit Checkout Demo
 
-This demo provides a simple e-commerce store that utilizes a pure JavaScript & HTML for frontend and a simple [ExpressJS](https://expressjs.com/) server for the backend to proxy the request from client-side to the [Xendit API Gateway](https://developers.xendit.co/api-reference/#invoices) to illustrate how to create an order with multiple choice of payments as well as the type integration and redirection. 
+This demo provides a simple e-commerce store that utilizes a pure JavaScript & HTML for frontend and a simple [ExpressJS](https://expressjs.com/) server for the backend to proxy the request from client-side to the [Xendit API Gateway](https://developers.xendit.co/api-reference/#invoices) to illustrate how to create an order with multiple choice of payments as well as the type of integration and redirection. 
 
 **You can see this demo app running in test mode on [demo.xendit.co](https://demo.xendit.co)**
 
@@ -8,15 +8,24 @@ This demo provides a simple e-commerce store that utilizes a pure JavaScript & H
 
 <img src="public/images/screenshots/demo-desktop.png" alt="Demo on Google Chrome" width="610"><img src="public/images/screenshots/demo-mobile.png" alt="Demo on Safari iPhone X" width="272">
 
-This demo provides an all-in-one example for integrating with Xendit Checkout on the web:
+Xendit Checkout is the fastest way to start collecting online payments in Indonesia and Philippines. Our unusually attractive team of developers works hard to generalize
 
 |     | Features
 :---: | :---
-✨ | **Beautiful UI components for card payments**. This demo uses pre-built Stripe components customized to fit the app design, including the [Card Element](https://stripe.com/docs/elements) which provides real-time validation, formatting, and autofill.
-💳 | **Card payments with Payment Request, Apple Pay, Google Pay, and Microsoft Pay.** The app offers frictionless card payment experiences with a single integration using the [Payment Request Button Element](https://stripe.com/docs/elements/payment-request-button).
-🌍 | **Payment methods for Europe and Asia.** A dozen redirect-based payment methods are supported through the [Sources API](https://stripe.com/docs/sources), from [iDEAL](https://stripe.com/docs/sources/ideal) to [WeChat Pay](https://stripe.com/docs/sources/wechat-pay).
-🎩 | **Automatic payment methods suggestion.** Picking a country will automatically show relevant payment methods. For example, selecting  “Germany” will suggest SOFORT, Giropay, and SEPA Debit.
-🔐 | **Dynamic 3D Secure for Visa and Mastercard.** The app automatically handles the correct flow to complete card payments with [3D Secure](https://stripe.com/docs/payments/dynamic-3ds), whether it’s required by the card or encoded in one of your [3D Secure Radar rules](https://dashboard.stripe.com/radar/rules).
+✨ | **14 different payment methods**. 12 payment methods accepting Indonesian Rupiah (IDR) and 2 payment methods accepting Philppine Pesos (PHP), with more on the way. 
+💳 | **UIs optimized for each payment method**. For example, barcode generation for Alfamart and up-to-date instructions for 6 different bank networks
+🌍 | **Real-time validation and formatting**. Some descriptions. 
+🔐 | **PCI-DSS compliance**. Some other descriptions.
+🎩 | **Supports multi-language integration**. Another one.
+
+Additionally, our sample code demonstrates:
+
+✅ Integration via dialog pop-up (aka modal iframe) and redirect
+
+✅ Creation of checkout pages for IDR and PHP
+
+✅ Super simple way to integrate with Xendit API Gateway to create invoice
+
 
 ## Codebase Structure
 
