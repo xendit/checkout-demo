@@ -17,7 +17,7 @@ Xendit Checkout is the fastest way to start collecting online payments in Indone
 📔 | **Front-end validation and formatting**. We handle phone number and card number validation.
 🔐 | **PCI-DSS compliance and 3DS handling**. Making it easier to offer and handle credit cards.
 🗺 | **Supports multi-language integration**. Full UI localization has been tested across millions of successful transactions.
-🚀 | **Ongoing maintenance and continuous improvement**. Whenever a payment partner makes a change (e.g., OVO) our team of developers handles it so yours doesn’t.
+🚀 | **Ongoing maintenance and continuous improvement**. Whenever a payment partner makes a change (e.g., OVO) our team of developers handles it so you don't have to.
 
 Additionally, our sample code demonstrates:
 - Integration via dialog pop-up (a.k.a modal iframe) and redirect
@@ -55,7 +55,7 @@ You need to modify your environment variables as stated in [`.env.example`](.env
 - `process.env.API_GATEWAY_URL`
 - `process.env.API_KEY`
 
-The value of `API_GATEWAY_URL` should be **https://api.xendit.co**. And for the `API_KEY`, you should fill it with the key that you've generated from developer settings. As for the `PORT`, you can define it by using the available port on your local machine or it will be provided by default value which is `8000`.
+The value of `API_GATEWAY_URL` should be **https://api.xendit.co**. For the `API_KEY`, you should fill it with the key that you've generated from developer settings. As for the `PORT`, you can define it by using the available port on your local machine or it will be provided by default value which is `8000`.
 
 Install dependencies using npm:
 
