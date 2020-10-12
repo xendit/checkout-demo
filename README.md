@@ -8,24 +8,21 @@ This demo provides a simple e-commerce store that utilizes a pure JavaScript & H
 
 <img src="public/images/screenshots/demo-desktop.png" alt="Demo on Google Chrome" width="610"><img src="public/images/screenshots/demo-mobile.png" alt="Demo on Safari iPhone X" width="272">
 
-Xendit Checkout is the fastest way to start collecting online payments in Indonesia and Philippines. Our unusually attractive team of developers works hard to generalize
+Xendit Checkout is the fastest way to start collecting online payments in Indonesia and Philippines.
 
 |     | Features
 :---: | :---
-✨ | **14 different payment methods**. 12 payment methods accepting Indonesian Rupiah (IDR) and 2 payment methods accepting Philppine Pesos (PHP), with more on the way. 
-💳 | **UIs optimized for each payment method**. For example, barcode generation for Alfamart and up-to-date instructions for 6 different bank networks
-🌍 | **Real-time validation and formatting**. Some descriptions. 
-🔐 | **PCI-DSS compliance**. Some other descriptions.
-🎩 | **Supports multi-language integration**. Another one.
+💸 | **14 different payment methods**. 12 payment methods accepting Indonesian Rupiah (IDR) and 2 payment methods accepting Philppine Pesos (PHP), with more on the way. 
+🔯 | **UIs optimized for each payment method**. For example, barcode generation for Alfamart and up-to-date instructions for 6 different bank networks
+📔 | **Front-end validation and formatting**. We handle phone number and card number validation
+🔐 | **PCI-DSS compliance and 3DS handling**. Making it easier to offer and handle credit cards.
+🗺 | **Supports multi-language integration**. Full UI localization has been tested across millions of successful transactions
+🚀 | **Ongoing maintenance and continuous improvement**. Whenever a payment partner makes a change (e.g., OVO) our team of developers handles it so yours doesn’t
 
 Additionally, our sample code demonstrates:
-
-✅ Integration via dialog pop-up (aka modal iframe) and redirect
-
-✅ Creation of checkout pages for IDR and PHP
-
-✅ Super simple way to integrate with Xendit API Gateway to create invoice
-
+- Integration via dialog pop-up (a.k.a modal iframe) and redirect
+- Creation of checkout pages for IDR and PHP
+- Simple integration to create an invoice using Xendit API Gateway
 
 ## Codebase Structure
 
