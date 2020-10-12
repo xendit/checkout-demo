@@ -13,11 +13,11 @@ Xendit Checkout is the fastest way to start collecting online payments in Indone
 |     | Features
 :---: | :---
 💸 | **14 different payment methods**. 12 payment methods accepting Indonesian Rupiah (IDR) and 2 payment methods accepting Philppine Pesos (PHP), with more on the way. 
-🔯 | **UIs optimized for each payment method**. For example, barcode generation for Alfamart and up-to-date instructions for 6 different bank networks
-📔 | **Front-end validation and formatting**. We handle phone number and card number validation
+🔯 | **UIs optimized for each payment method**. For example, barcode generation for Alfamart and up-to-date instructions for 6 different bank networks.
+📔 | **Front-end validation and formatting**. We handle phone number and card number validation.
 🔐 | **PCI-DSS compliance and 3DS handling**. Making it easier to offer and handle credit cards.
-🗺 | **Supports multi-language integration**. Full UI localization has been tested across millions of successful transactions
-🚀 | **Ongoing maintenance and continuous improvement**. Whenever a payment partner makes a change (e.g., OVO) our team of developers handles it so yours doesn’t
+🗺 | **Supports multi-language integration**. Full UI localization has been tested across millions of successful transactions.
+🚀 | **Ongoing maintenance and continuous improvement**. Whenever a payment partner makes a change (e.g., OVO) our team of developers handles it so yours doesn’t.
 
 Additionally, our sample code demonstrates:
 - Integration via dialog pop-up (a.k.a modal iframe) and redirect
@@ -33,7 +33,7 @@ The core logic of the Xendit Checkout is mostly contained within two files:
 1.  [`server/routes.js`](server/routes.js) defines the routes on the backend that create Xendit invoice/checkout data.
 2.  [`server/controller.js`](server/controller.js) defines the request that will be forwarded to the Xendit API Gateway.
 
-There is also one file called [`server/config.js`](server/config.js) that store the configurable pre-filled invoice data (`payer_email` and `description`). You can override these values in the [`server/routes.js`](server/routes.js).
+There is also one file called [`server/config.js`](server/config.js) that stores the configurable pre-filled invoice data (`payer_email` and `description`). You can override those values in the [`server/routes.js`](server/routes.js).
 
 ## Getting Started
 
@@ -45,7 +45,7 @@ You’ll need the following:
 - [NPM](https://npmjs.org) >= `6.0.0`
 - Xendit account to accept payments ([sign up](https://dashboard.xendit.co/register/1) for free). After registering, please [generate](https://dashboard.xendit.co/settings/developers#api-keys) secret key with **MONEY-IN WRITE** permission in order to perform request for creating invoice. 
 
-After registering account on Xendit, you can [enable the payment methods](https://dashboard.xendit.co/invoices) you’d like to test by clicking on Customize button in the invoice page (Home > Accept Payments > Invoices).
+After registering account and generating the secret key, you can [enable the payment methods](https://dashboard.xendit.co/invoices) you’d like to test by clicking on **Customize** button in the invoice page (Home > Accept Payments > Invoices).
 
 ### Running the Node Server
 
