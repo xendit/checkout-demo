@@ -144,11 +144,6 @@
                 redirect_url: `${window.location.origin}/try-checkout`
             };
 
-            // redirection is not needed for dialog pop-up integration
-            if (invoiceUrl === 'Dialog Pop-up') {
-                delete invoiceData.redirect_url;
-            }
-
             // create an invoice for store checkout
             try {
                 const response = await fetch('/api/invoice', {
