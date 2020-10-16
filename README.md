@@ -18,7 +18,7 @@ Xendit Checkout is the fastest way to start collecting online payments in Indone
 
 |     | Features
 :---: | :---
-💸 | **14 different payment methods**. 12 payment methods accepting Indonesian Rupiah (IDR) and 2 payment methods accepting Philppine Pesos (PHP), with more on the way. 
+💸 | **14 different payment methods**. 12 payment methods accepting Indonesian Rupiah (IDR) and 2 payment methods accepting Philippine Pesos (PHP), with more on the way. 
 📱 | **Beautiful, responsive UIs optimized for each payment method**. For example, we do barcode generation for Alfamart/Indomaret, and maintain 19 sets of up-to-date instructions for Virtual Accounts. We also formatting and front-end validation for phone numbers and credit card data.
 🔐 | **PCI-DSS compliance and 3DS handling**. Making it easier to offer and handle credit cards.
 🗺 | **Supports multi-language integration**. Full UI localization that has been tested across millions of successful transactions.
