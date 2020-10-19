@@ -12,20 +12,20 @@ const cartData = [
                 {
                     name: 'HoneyBadger Plushie',
                     quantity: 1,
-                    price: 400000,
-                    formatted_price: '400.000',
-                    total_amount: 400000,
-                    formatted_total_amount: '400.000',
+                    price: 200000,
+                    formatted_price: '200.000',
+                    total_amount: 200000,
+                    formatted_total_amount: '200.000',
                     currency: 'IDR',
                     image: '/images/products/plushie.jpg'
                 },
                 {
                     name: 'Xendit Mug',
                     quantity: 1,
-                    price: 500000,
-                    formatted_price: '500.000',
-                    total_amount: 500000,
-                    formatted_total_amount: '500.000',
+                    price: 100000,
+                    formatted_price: '100.000',
+                    total_amount: 100000,
+                    formatted_total_amount: '100.000',
                     currency: 'IDR',
                     image: '/images/products/mug.jpg'
                 }
@@ -36,13 +36,13 @@ const cartData = [
                 currency: 'IDR'
             },
             subtotal: {
-                amount: 900000,
-                formatted_amount: '900.000',
+                amount: 300000,
+                formatted_amount: '300.000',
                 currency: 'IDR'
             },
             total: {
-                amount: 905000,
-                formatted_amount: '905.000',
+                amount: 305000,
+                formatted_amount: '305.000',
                 currency: 'IDR'
             }
         }
@@ -54,20 +54,20 @@ const cartData = [
                 {
                     name: 'HoneyBadger Plushie',
                     quantity: 1,
-                    price: 200,
-                    formatted_price: '200',
-                    total_amount: 200,
-                    formatted_total_amount: '200',
+                    price: 700,
+                    formatted_price: '700',
+                    total_amount: 700,
+                    formatted_total_amount: '700',
                     currency: 'PHP',
                     image: '/images/products/plushie.jpg'
                 },
                 {
                     name: 'Xendit Mug',
                     quantity: 1,
-                    price: 300,
-                    formatted_price: '300',
-                    total_amount: 300,
-                    formatted_total_amount: '300',
+                    price: 350,
+                    formatted_price: '350',
+                    total_amount: 350,
+                    formatted_total_amount: '350',
                     currency: 'PHP',
                     image: '/images/products/mug.jpg'
                 }
@@ -78,13 +78,13 @@ const cartData = [
                 currency: 'PHP'
             },
             subtotal: {
-                amount: 500,
-                formatted_amount: '500',
+                amount: 1050,
+                formatted_amount: '1.050',
                 currency: 'PHP'
             },
             total: {
-                amount: 510,
-                formatted_amount: '510',
+                amount: 1060,
+                formatted_amount: '1.060',
                 currency: 'PHP'
             }
         }
