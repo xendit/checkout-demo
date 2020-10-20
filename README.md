@@ -45,7 +45,7 @@ You’ll need the following:
 
 - [Node.js](https://nodejs.org) >= `10.0.0`
 - [NPM](https://npmjs.org) >= `6.0.0`
-- Xendit account to accept payments ([sign up](https://dashboard.xendit.co/register/1) for free). After registering, please [generate](https://dashboard.xendit.co/settings/developers#api-keys) a secret key with **MONEY-IN WRITE** permissions. You'll need this to to perform requests for creating invoices. 
+- Xendit account to accept payments ([sign up](https://dashboard.xendit.co/register/1) for free). After registering, please [generate](https://dashboard.xendit.co/settings/developers#api-keys) a secret key with **MONEY-IN WRITE** permissions. You'll need this to perform requests for creating invoices. 
 
 After registering an account and generating a secret key, you can [enable the payment methods](https://dashboard.xendit.co/invoices) you’d like to test by clicking on **Customize** button in the invoice page (Home > Accept Payments > Invoices). By default, all enabled and available payment methods will be available for an invoice.
 

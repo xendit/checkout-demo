@@ -10,7 +10,7 @@ const cartData = [
         cart: {
             order_items: [
                 {
-                    name: 'HoneyBadger Plushie',
+                    name: 'Honey Badger Plushie',
                     quantity: 1,
                     price: 200000,
                     formatted_price: '200.000',
@@ -52,7 +52,7 @@ const cartData = [
         cart: {
             order_items: [
                 {
-                    name: 'HoneyBadger Plushie',
+                    name: 'Honey Badger Plushie',
                     quantity: 1,
                     price: 700,
                     formatted_price: '700',
