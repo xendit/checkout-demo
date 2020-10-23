@@ -21,11 +21,11 @@ const cartData = [
                 },
                 {
                     name: 'Xendit Mug',
-                    quantity: 1,
+                    quantity: 3,
                     price: 100000,
                     formatted_price: '100.000',
-                    total_amount: 100000,
-                    formatted_total_amount: '100.000',
+                    total_amount: 300000,
+                    formatted_total_amount: '300.000',
                     currency: 'IDR',
                     image: '/images/products/mug.jpg'
                 }
@@ -36,13 +36,13 @@ const cartData = [
                 currency: 'IDR'
             },
             subtotal: {
-                amount: 300000,
-                formatted_amount: '300.000',
+                amount: 500000,
+                formatted_amount: '500.000',
                 currency: 'IDR'
             },
             total: {
-                amount: 305000,
-                formatted_amount: '305.000',
+                amount: 505000,
+                formatted_amount: '505.000',
                 currency: 'IDR'
             }
         }
@@ -63,11 +63,11 @@ const cartData = [
                 },
                 {
                     name: 'Xendit Mug',
-                    quantity: 1,
+                    quantity: 3,
                     price: 350,
                     formatted_price: '350',
-                    total_amount: 350,
-                    formatted_total_amount: '350',
+                    total_amount: 1050,
+                    formatted_total_amount: '1050',
                     currency: 'PHP',
                     image: '/images/products/mug.jpg'
                 }
@@ -78,13 +78,13 @@ const cartData = [
                 currency: 'PHP'
             },
             subtotal: {
-                amount: 1050,
-                formatted_amount: '1.050',
+                amount: 1750,
+                formatted_amount: '1.750',
                 currency: 'PHP'
             },
             total: {
-                amount: 1060,
-                formatted_amount: '1.060',
+                amount: 1760,
+                formatted_amount: '1.760',
                 currency: 'PHP'
             }
         }
