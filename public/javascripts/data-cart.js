@@ -67,7 +67,7 @@ const cartData = [
                     price: 350,
                     formatted_price: '350',
                     total_amount: 1050,
-                    formatted_total_amount: '1.050',
+                    formatted_total_amount: '1,050',
                     currency: 'PHP',
                     image: '/images/products/mug.jpg'
                 }
@@ -79,12 +79,12 @@ const cartData = [
             },
             subtotal: {
                 amount: 1750,
-                formatted_amount: '1.750',
+                formatted_amount: '1,750',
                 currency: 'PHP'
             },
             total: {
                 amount: 1760,
-                formatted_amount: '1.760',
+                formatted_amount: '1,760',
                 currency: 'PHP'
             }
         }

@@ -412,6 +412,5 @@
     .modal-popup {
         height: calc(100% - 40px);
         width: calc(100vw - 40px);
-        max-width: 600px;
     }
 }

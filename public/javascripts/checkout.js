@@ -15,6 +15,7 @@
     const selectIntegration = document.getElementById('select-integration');
     const selectCountry = document.getElementById('select-country');
     const buttonStartDemo = document.getElementById('button-start-demo');
+    const formConfigure = document.getElementById('form-configure');
 
     // modal elements
     const modal = document.querySelector('.modal-popup');
@@ -33,7 +34,8 @@
         setupCart();
     });
 
-    buttonStartDemo.addEventListener('click', () => {
+    formConfigure.addEventListener('submit', (event) => {
+        event.preventDefault();
         startDemo();
     });
 
