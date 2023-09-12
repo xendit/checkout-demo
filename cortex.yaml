@@ -15,12 +15,17 @@ info:
           name: xendit/invoice
         - type: SLACK
           channel: p-checkout
+        - email: adhiarta@xendit.co
+          type: EMAIL
     x-cortex-dependency: []
     x-cortex-service-groups:
         - node
         - web
+        - adhiarta@xendit.co
+        - P3
+        - Merchant-Interface
     x-cortex-link:
         - url: https://xendit.atlassian.net/wiki/spaces/INV/overview
           name: Handbook
           type: RUNBOOK
-          description: Handbook for Invoice 
+          description: Handbook for Invoice
