@@ -29,3 +29,16 @@ app.use('/', require('./routes'));
 const server = app.listen(process.env.PORT || 8000, () => {
     console.log(`server is listening on port: ${server.address().port}`);
 });
+
+process.on('SIGTERM', () => {
+    console.log('SIGTERM signal received: closing HTTP server');
+    server.close(() => {
+        debug('HTTP server closed');
+    });
+});
+process.on('SIGINT', () => {
+    console.log('SIGINT signal received: closing HTTP server');
+    server.close(() => {
+        debug('HTTP server closed');
+    });
+});
